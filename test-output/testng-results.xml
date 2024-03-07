@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T11:31:26 IST" name="Default suite" finished-at="2024-03-07T11:31:50 IST" duration-ms="24297">
+  <suite started-at="2024-03-07T13:26:35 IST" name="Default suite" finished-at="2024-03-07T13:27:12 IST" duration-ms="37530">
     <groups>
     </groups>
-    <test started-at="2024-03-07T11:31:26 IST" name="Default test" finished-at="2024-03-07T11:31:50 IST" duration-ms="24297">
+    <test started-at="2024-03-07T13:26:35 IST" name="Default test" finished-at="2024-03-07T13:27:12 IST" duration-ms="37530">
       <class name="testCases.TestClass1">
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T11:31:26 IST" name="preConditions" finished-at="2024-03-07T11:31:42 IST" duration-ms="15414" status="PASS">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T13:26:35 IST" name="preConditions" finished-at="2024-03-07T13:26:53 IST" duration-ms="18024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConditions -->
-        <test-method signature="Login()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T11:31:42 IST" name="Login" finished-at="2024-03-07T11:31:49 IST" duration-ms="7499" status="PASS">
+        <test-method signature="Login()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T13:26:53 IST" name="Login" finished-at="2024-03-07T13:27:01 IST" duration-ms="8456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T11:31:49 IST" name="postConditions" finished-at="2024-03-07T11:31:50 IST" duration-ms="1307" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@1a245833]" started-at="2024-03-07T13:27:01 IST" name="postConditions" finished-at="2024-03-07T13:27:12 IST" duration-ms="10963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
