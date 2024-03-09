@@ -1,0 +1,46 @@
+[
+   {
+  "name" : "emulator",	
+  "Caps": {
+    "deviceName": "samsunggalaxy",
+    "udid": "emulator-5554",
+    "platformName": "Android",
+    "platformVersion": "12",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity",
+    "recordVideo": true
+     }
+     },
+   
+   {
+  "name" : "samsung",
+  "Caps": {
+    "deviceName": "Samsung Galaxy M31",
+    "udid": "RZ8R32J9CBX",
+    "platformName": "Android",
+    "platformVersion": "12",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity",
+    "recordVideo": true
+     }
+     }
+	
+{
+  "name" : "vivo",
+  "Caps": {
+    "deviceName": "Vivo Y36",
+    "udid": "10BDB70PG4000XX",
+    "platformName": "Android",
+    "platformVersion": "13",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity",
+    "recordVideo": true
+     }
+     }
+
+
+
+]

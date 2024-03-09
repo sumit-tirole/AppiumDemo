@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.TestClass1">
         <methods>
-          <include name="postConditions"/>
-          <include name="preConditions"/>
+          <include name="setup"/>
+          <include name="teardown"/>
           <include name="Login"/>
         </methods>
       </class> <!-- testCases.TestClass1 -->

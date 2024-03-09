@@ -1,10 +1,10 @@
 package testCases;
 
 import org.testng.annotations.Test;
+
 import com.AppiumDemo.genericutility.BaseClass;
 import com.AppiumDemo.genericutility.FileUtility;
 import com.AppiumDemo.pomrepo.AppElements;
-
 
 public class TestClass1 extends BaseClass {
 	FileUtility fileUtils = new FileUtility();
@@ -18,7 +18,7 @@ public class TestClass1 extends BaseClass {
 		element.getSignInButton().click();
 		element.getMenuButton().click();
 		element.getLogoutButton().click();
-		;
+				
 		}
 		
 	}
