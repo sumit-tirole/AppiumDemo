@@ -98,11 +98,8 @@
 </dependency>
 
 
-  	<dependency>
-  		<groupId>Appium-01</groupId>
-  		<artifactId>Appiumtest</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+
+  	
   </dependencies>
 
   <build>
