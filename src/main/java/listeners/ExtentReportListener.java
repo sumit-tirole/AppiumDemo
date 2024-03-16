@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
@@ -27,6 +29,7 @@ public class ExtentReportListener implements ITestListener {
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 
+	
 	private static ExtentReports init() {
  
 		Path path = Paths.get(OUTPUT_FOLDER);
@@ -129,8 +132,6 @@ System.out.println((result.getMethod().getMethodName() + " failed!"));
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
-
-	
 
 	
 }

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[<a href='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\removeParty_16_03_2024_12_58_12.png'> <img src='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\removeParty_16_03_2024_12_58_12.png' height='100' width='100'/> </a>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-03-09T11:20:49 IST" name="Suite" finished-at="2024-03-09T11:21:08 IST" duration-ms="18933">
+  <suite started-at="2024-03-16T12:59:55 IST" name="Suite" finished-at="2024-03-16T13:02:41 IST" duration-ms="165811">
     <groups>
     </groups>
-    <test started-at="2024-03-09T11:20:49 IST" name="Test1" finished-at="2024-03-09T11:21:06 IST" duration-ms="16577">
+    <test started-at="2024-03-16T12:59:55 IST" name="Test1" finished-at="2024-03-16T13:02:41 IST" duration-ms="165811">
       <class name="testCases.TestClass1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@398dada8]" started-at="2024-03-09T11:20:49 IST" name="setup" finished-at="2024-03-09T11:20:58 IST" duration-ms="8251" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T12:59:55 IST" name="setup" finished-at="2024-03-16T13:00:02 IST" duration-ms="7549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,38 +21,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:testCases.TestClass1@398dada8]" started-at="2024-03-09T11:20:58 IST" name="Login" finished-at="2024-03-09T11:21:05 IST" duration-ms="7601" status="PASS">
+        <test-method signature="login()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:02 IST" name="login" finished-at="2024-03-16T13:00:13 IST" duration-ms="10179" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestClass1@398dada8]" started-at="2024-03-09T11:21:05 IST" name="teardown" finished-at="2024-03-09T11:21:06 IST" duration-ms="583" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:13 IST" name="postConditions" finished-at="2024-03-16T13:00:15 IST" duration-ms="2291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TestClass1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-03-09T11:20:49 IST" name="Test2" finished-at="2024-03-09T11:21:08 IST" duration-ms="18931">
-      <class name="testCases.TestClass1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@352c1b98]" started-at="2024-03-09T11:20:49 IST" name="setup" finished-at="2024-03-09T11:20:58 IST" duration-ms="8792" status="PASS">
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:15 IST" name="setup" finished-at="2024-03-16T13:00:22 IST" duration-ms="7276" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vivo]]>
+                <![CDATA[samsung]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:testCases.TestClass1@352c1b98]" started-at="2024-03-09T11:20:58 IST" name="Login" finished-at="2024-03-09T11:21:08 IST" duration-ms="9401" status="PASS">
+        <test-method signature="removeParty()[pri:2, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:22 IST" name="removeParty" finished-at="2024-03-16T13:00:57 IST" duration-ms="34290" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestClass1@352c1b98]" started-at="2024-03-09T11:21:08 IST" name="teardown" finished-at="2024-03-09T11:21:08 IST" duration-ms="609" status="PASS">
+        </test-method> <!-- removeParty -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:57 IST" name="postConditions" finished-at="2024-03-16T13:00:59 IST" duration-ms="2439" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:59 IST" name="setup" finished-at="2024-03-16T13:01:06 IST" duration-ms="7373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="serveParty()[pri:3, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:06 IST" name="serveParty" finished-at="2024-03-16T13:01:53 IST" duration-ms="46443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serveParty -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:53 IST" name="postConditions" finished-at="2024-03-16T13:01:55 IST" duration-ms="2600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:55 IST" name="setup" finished-at="2024-03-16T13:02:03 IST" duration-ms="7319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="reAddParty()[pri:4, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:02:03 IST" name="reAddParty" finished-at="2024-03-16T13:02:38 IST" duration-ms="35515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reAddParty -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:02:38 IST" name="postConditions" finished-at="2024-03-16T13:02:41 IST" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
       </class> <!-- testCases.TestClass1 -->
-    </test> <!-- Test2 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -41,6 +41,36 @@
      }
      }
 
+{
+  "name" : "emulator tab",
+  "Caps": {
+    "deviceName": "Samsung_Galaxy_Tab_S9",
+    "udid": "emulator-5554",
+    "platformName": "Android",
+    "platformVersion": "13",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity",
+    "recordVideo": true
+     }
+     }
+
+{
+  "name" : "Lenovo tab",
+  "Caps": {
+    "deviceName": "Lenovo TB-8504X",
+    "udid": "172.16.1.90:5555",
+    "platformName": "Android",
+    "platformVersion": "8.1.0",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity",
+    "recordVideo": true
+     }
+     }
+
+
+
 
 
 ]

@@ -5,15 +5,16 @@
     <listener class-name="listeners.ExtentReportListener"/>
     <listener class-name="listeners.ScreenshotListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="device" value="samsung"/>
     <classes>
       <class name="testCases.TestClass1">
         <methods>
+          <include name="setup"/>
+          <include name="removeParty"/>
           <include name="postConditions"/>
-          <include name="firstTest"/>
-          <include name="preConditions"/>
         </methods>
       </class> <!-- testCases.TestClass1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
