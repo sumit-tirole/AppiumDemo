@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[<a href='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\removeParty_16_03_2024_12_58_12.png'> <img src='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\removeParty_16_03_2024_12_58_12.png' height='100' width='100'/> </a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-03-16T12:59:55 IST" name="Suite" finished-at="2024-03-16T13:02:41 IST" duration-ms="165811">
+  <suite started-at="2024-03-18T13:20:41 IST" name="Suite" finished-at="2024-03-18T13:23:33 IST" duration-ms="171235">
     <groups>
     </groups>
-    <test started-at="2024-03-16T12:59:55 IST" name="Test1" finished-at="2024-03-16T13:02:41 IST" duration-ms="165811">
+    <test started-at="2024-03-18T13:20:41 IST" name="Test1" finished-at="2024-03-18T13:23:33 IST" duration-ms="171235">
       <class name="testCases.TestClass1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T12:59:55 IST" name="setup" finished-at="2024-03-16T13:00:02 IST" duration-ms="7549" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:20:42 IST" name="setup" finished-at="2024-03-18T13:20:51 IST" duration-ms="9402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:02 IST" name="login" finished-at="2024-03-16T13:00:13 IST" duration-ms="10179" status="PASS">
+        <test-method signature="login()[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:20:51 IST" name="login" finished-at="2024-03-18T13:21:01 IST" duration-ms="9863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:13 IST" name="postConditions" finished-at="2024-03-16T13:00:15 IST" duration-ms="2291" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:01 IST" name="postConditions" finished-at="2024-03-18T13:21:03 IST" duration-ms="2338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:15 IST" name="setup" finished-at="2024-03-16T13:00:22 IST" duration-ms="7276" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:03 IST" name="setup" finished-at="2024-03-18T13:21:11 IST" duration-ms="7641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="removeParty()[pri:2, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:22 IST" name="removeParty" finished-at="2024-03-16T13:00:57 IST" duration-ms="34290" status="PASS">
+        <test-method signature="removeParty()[pri:2, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:11 IST" name="removeParty" finished-at="2024-03-18T13:21:49 IST" duration-ms="38285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeParty -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:57 IST" name="postConditions" finished-at="2024-03-16T13:00:59 IST" duration-ms="2439" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:49 IST" name="postConditions" finished-at="2024-03-18T13:21:51 IST" duration-ms="2392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:00:59 IST" name="setup" finished-at="2024-03-16T13:01:06 IST" duration-ms="7373" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:51 IST" name="setup" finished-at="2024-03-18T13:21:59 IST" duration-ms="7364" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="serveParty()[pri:3, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:06 IST" name="serveParty" finished-at="2024-03-16T13:01:53 IST" duration-ms="46443" status="PASS">
+        <test-method signature="serveParty()[pri:3, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:21:59 IST" name="serveParty" finished-at="2024-03-18T13:22:45 IST" duration-ms="45659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serveParty -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:53 IST" name="postConditions" finished-at="2024-03-16T13:01:55 IST" duration-ms="2600" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:22:45 IST" name="postConditions" finished-at="2024-03-18T13:22:47 IST" duration-ms="2528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:01:55 IST" name="setup" finished-at="2024-03-16T13:02:03 IST" duration-ms="7319" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:22:47 IST" name="setup" finished-at="2024-03-18T13:22:54 IST" duration-ms="7336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="reAddParty()[pri:4, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:02:03 IST" name="reAddParty" finished-at="2024-03-16T13:02:38 IST" duration-ms="35515" status="PASS">
+        <test-method signature="reAddParty()[pri:4, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:22:54 IST" name="reAddParty" finished-at="2024-03-18T13:23:30 IST" duration-ms="35853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reAddParty -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5e9ea380]" started-at="2024-03-16T13:02:38 IST" name="postConditions" finished-at="2024-03-16T13:02:41 IST" duration-ms="2522" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@5c77053b]" started-at="2024-03-18T13:23:30 IST" name="postConditions" finished-at="2024-03-18T13:23:33 IST" duration-ms="2409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->

@@ -1,12 +1,10 @@
 package testCases;
 
 import java.io.IOException;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.AppiumDemo.genericutility.BaseClass;
 import com.AppiumDemo.genericutility.FileUtility;
 import com.AppiumDemo.genericutility.Utility;
@@ -25,7 +23,6 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 0, enabled =true)
 	public void login() throws Throwable {
-		
 		CreateParty element = new CreateParty(driver);
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));

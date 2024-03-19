@@ -1,8 +1,1 @@
-[INFO ] 2024-03-16 12:53:48.549 [main] TestClass1 - Login successful
-[INFO ] 2024-03-16 12:54:39.941 [main] TestClass1 - Current Status of Waitlist party is removed: 12:54pm
-[INFO ] 2024-03-16 12:55:37.838 [main] TestClass1 - Current Status of Waitlist party is served: 12:55pm
-[INFO ] 2024-03-16 12:56:46.279 [main] TestClass1 - Login successful
-[INFO ] 2024-03-16 12:59:06.665 [main] TestClass1 - Current Status of Waitlist party is served: 12:59pm
-[INFO ] 2024-03-16 13:00:09.026 [main] TestClass1 - Login successful
-[INFO ] 2024-03-16 13:00:53.940 [main] TestClass1 - Current Status of Waitlist party is removed: 1:00pm
-[INFO ] 2024-03-16 13:01:50.057 [main] TestClass1 - Current Status of Waitlist party is served: 1:01pm
+[INFO ] 2024-03-18 13:55:08.268 [main] TestClass1 - Login successful

@@ -4,10 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.LoggerContext;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -21,6 +20,7 @@ public class BaseClass {
 		return driver;
 	}
         	
+    	    	
     	@Parameters({"device"})
     	@BeforeMethod()
     	public void setup(String device) throws Exception {
@@ -30,10 +30,11 @@ public class BaseClass {
     	recordingUtil.startRecording(driver);
     	}
         	  
-    	@AfterMethod
+    	@AfterSuite
     	public void postConditions() throws IOException {
     	
     	recordingUtil.stopRecording(driver);
-    	driver.quit();    	   
+    	driver.quit();
+    	
     	}
 }
