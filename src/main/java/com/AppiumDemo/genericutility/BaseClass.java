@@ -1,11 +1,10 @@
 package com.AppiumDemo.genericutility;
 
 import java.io.IOException;
+
 import java.net.URL;
 import java.time.Duration;
-
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 

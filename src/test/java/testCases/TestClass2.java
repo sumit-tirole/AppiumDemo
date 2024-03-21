@@ -9,6 +9,7 @@ import com.AppiumDemo.genericutility.BaseClass;
 import com.AppiumDemo.genericutility.FileUtility;
 import com.AppiumDemo.genericutility.Utility;
 import com.AppiumDemo.pomrepo.CreateParty;
+import com.AppiumDemo.pomrepo.Customization;
 import com.AppiumDemo.pomrepo.Login;
 import com.AppiumDemo.pomrepo.RemoveParty;
 import com.AppiumDemo.pomrepo.ServeParty;
@@ -92,12 +93,61 @@ public class TestClass2 extends BaseClass {
 		Thread.sleep(500);
 		element.getCancelButton().click();
 		Thread.sleep(500);
-		element1.getMenuButton().click();
-		element1.getLogoutButton().click();
+				
+		}
+	
+	@Test(priority = 3,enabled =true)
+	public void Customization() throws Throwable {
+		CreateParty element = new CreateParty(driver);		
+		Customization element1 = new Customization(driver);
+		Login element2 = new Login(driver);
+		element2.getMenuButton().click();
+		element1.getCustomizationButton().click();
+		element1.getAddingCustomersButton().click();
+		element1.getPhoneToggleButton().click();
+		element1.getEmailToggleButton().click();
+		element1.getStatusToggleButton().click();
+		element1.getNotesToggleButton().click();
+		element1.getPartySizeToggleButton().click();
+		driver.navigate().back();
+		Thread.sleep(500);
+		driver.navigate().back();
+		Thread.sleep(500);
+		driver.navigate().back();
+		Thread.sleep(500);
+		element.getAddPartyButton().click();
+		Thread.sleep(2000);
+		
+		//Assertions here
+						
+		element.getCancelButton().click();
+		element2.getMenuButton().click();
+		element1.getCustomizationButton().click();
+		element1.getAddingCustomersButton().click();
+		element1.getPhoneToggleButton().click();
+		element1.getEmailToggleButton().click();
+		element1.getStatusToggleButton().click();
+		element1.getNotesToggleButton().click();
+		element1.getPartySizeToggleButton().click();
+		driver.navigate().back();
+		Thread.sleep(500);
+		driver.navigate().back();
+		Thread.sleep(500);
+		driver.navigate().back();
+		Thread.sleep(500);
+		element2.getMenuButton().click();
+		element2.getLogoutButton().click();
 		
 		}
 	
-	@Test(priority = 3,enabled = false)
+	
+	
+	
+	
+	
+	
+	
+	@Test(priority = 4,enabled = false)
 	public void removeParty() throws Throwable {
 		CreateParty element = new CreateParty(driver);
 		RemoveParty element1 = new RemoveParty(driver);
@@ -115,7 +165,7 @@ public class TestClass2 extends BaseClass {
 		
 	}
 	
-	@Test(priority = 4, enabled=false)
+	@Test(priority = 5, enabled=false)
 	public void serveParty() throws Throwable {
 		CreateParty element = new CreateParty(driver);
 		RemoveParty element1 = new RemoveParty(driver);

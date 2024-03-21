@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass2" class="method navigator-link" hash-for-method="Customization">Customization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TestClass2" class="method navigator-link" hash-for-method="createPartyScenario">createPartyScenario</a> <!-- method navigator-link -->
@@ -134,6 +139,13 @@
               <span class="class-name">testCases.TestClass2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Customization">
+                  </a> <!-- Customization -->
+                  <span class="method-name">Customization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="createPartyScenario">
@@ -214,19 +226,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signupScenario')
 data.setCell(0, 2, 'testCases.TestClass2')
-data.setCell(0, 3, 41585);
+data.setCell(0, 3, 39901);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createPartyScenario')
 data.setCell(1, 2, 'testCases.TestClass2')
-data.setCell(1, 3, 40401);
+data.setCell(1, 3, 37816);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginScenario')
+data.setCell(2, 1, 'Customization')
 data.setCell(2, 2, 'testCases.TestClass2')
-data.setCell(2, 3, 5629);
+data.setCell(2, 3, 27149);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginScenario')
+data.setCell(3, 2, 'testCases.TestClass2')
+data.setCell(3, 3, 4608);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -252,9 +268,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.TestClass2</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">removeParty</span>
-                <br/>
                 <span class="ignored-method-name">serveParty</span>
+                <br/>
+                <span class="ignored-method-name">removeParty</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -273,19 +289,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">signupScenario</span>
-                <span class="method-start">9166 ms</span>
+                <span class="method-start">11162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginScenario</span>
-                <span class="method-start">50763 ms</span>
+                <span class="method-start">51074 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createPartyScenario</span>
-                <span class="method-start">56395 ms</span>
+                <span class="method-start">55687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Customization</span>
+                <span class="method-start">93512 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">postConditions</span>
-                <span class="method-start">97209 ms</span>
+                <span class="method-start">121064 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
