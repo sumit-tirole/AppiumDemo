@@ -46,7 +46,7 @@ public class TestClass2 extends BaseClass {
 		element.getEmailField().sendKeys("steve1234@yopmail.com");
 		element.getPasswordField().sendKeys("Test@1234");
 		element.getConfirmPasswordField().sendKeys("Test@1234");
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.navigate().back();
 		driver.navigate().back();
 	}
@@ -85,6 +85,7 @@ public class TestClass2 extends BaseClass {
 		element.getNextButton().click();
 		util.performSwipe(driver, 528, 574, 528, 512,8);
 //		element.getAddPartyButton1().click();
+		Thread.sleep(4000);
 		element.getCancelButton().click();
 		Thread.sleep(500);
 		element.getCancelButton().click();
