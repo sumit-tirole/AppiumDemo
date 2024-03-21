@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass2" class="method navigator-link" hash-for-method="createPartyScenario">createPartyScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass1" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass2" class="method navigator-link" hash-for-method="loginScenario">loginScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass1" class="method navigator-link" hash-for-method="reAddParty">reAddParty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass1" class="method navigator-link" hash-for-method="removeParty">removeParty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass1" class="method navigator-link" hash-for-method="serveParty">serveParty</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestClass2" class="method navigator-link" hash-for-method="signupScenario">signupScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,38 +137,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TestClass1</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TestClass2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
+                  <a name="createPartyScenario">
+                  </a> <!-- createPartyScenario -->
+                  <span class="method-name">createPartyScenario</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TestClass2.createPartyScenario(TestClass2.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TestClass2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginScenario">
+                  </a> <!-- loginScenario -->
+                  <span class="method-name">loginScenario</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="reAddParty">
-                  </a> <!-- reAddParty -->
-                  <span class="method-name">reAddParty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="removeParty">
-                  </a> <!-- removeParty -->
-                  <span class="method-name">removeParty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="serveParty">
-                  </a> <!-- serveParty -->
-                  <span class="method-name">serveParty</span>
+                  <a name="signupScenario">
+                  </a> <!-- signupScenario -->
+                  <span class="method-name">signupScenario</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,14 +189,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;device&quot; value=&quot;samsung&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.ExtentReportListener&quot;/&gt;
     &lt;listener class-name=&quot;listeners.ScreenshotListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
-    &lt;parameter name=&quot;device&quot; value=&quot;samsung&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TestClass1&quot;/&gt;
+      &lt;class name=&quot;testCases.TestClass2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -226,28 +236,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'serveParty')
-data.setCell(0, 2, 'testCases.TestClass1')
-data.setCell(0, 3, 45659);
+data.setCell(0, 1, 'signupScenario')
+data.setCell(0, 2, 'testCases.TestClass2')
+data.setCell(0, 3, 38684);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'removeParty')
-data.setCell(1, 2, 'testCases.TestClass1')
-data.setCell(1, 3, 38285);
+data.setCell(1, 1, 'createPartyScenario')
+data.setCell(1, 2, 'testCases.TestClass2')
+data.setCell(1, 3, 36163);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'reAddParty')
-data.setCell(2, 2, 'testCases.TestClass1')
-data.setCell(2, 3, 35853);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'testCases.TestClass1')
-data.setCell(3, 3, 9863);
+data.setCell(2, 1, 'loginScenario')
+data.setCell(2, 2, 'testCases.TestClass2')
+data.setCell(2, 3, 4740);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -258,17 +264,25 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createPartyScenario</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\createPartyScenario_21_03_2024_12_19_34.png'> <img src='C:\Users\wbox42\eclipse-workspace\AppiumDemo\target\surefire-reports\failure_screenshots\createPartyScenario_21_03_2024_12_19_34.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TestClass1</span>
+              <span class="ignored-class-name">testCases.TestClass2</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">createParty</span>
+                <span class="ignored-method-name">removeParty</span>
+                <br/>
+                <span class="ignored-method-name">serveParty</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -280,55 +294,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TestClass1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="chronological-class-name">testCases.TestClass2</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <span class="method-name">setup(samsung)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">9404 ms</span>
+                <span class="method-name">signupScenario</span>
+                <span class="method-start">8903 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postConditions</span>
-                <span class="method-start">19277 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(samsung)</span>
-                <span class="method-start">21623 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">removeParty</span>
-                <span class="method-start">29264 ms</span>
+                <span class="method-name">loginScenario</span>
+                <span class="method-start">47617 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postConditions</span>
-                <span class="method-start">67557 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(samsung)</span>
-                <span class="method-start">69950 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">serveParty</span>
-                <span class="method-start">77315 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPartyScenario</span>
+                <span class="method-start">52361 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="configuration-suite after">
                 <span class="method-name">postConditions</span>
-                <span class="method-start">122977 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(samsung)</span>
-                <span class="method-start">125506 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">reAddParty</span>
-                <span class="method-start">132842 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postConditions</span>
-                <span class="method-start">168700 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">90244 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

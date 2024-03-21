@@ -22,7 +22,7 @@ public class BaseClass {
         	
     	    	
     	@Parameters({"device"})
-    	@BeforeMethod()
+    	@BeforeSuite()
     	public void setup(String device) throws Exception {
     		   		
     	driver = new AndroidDriver(new URL("http://192.168.3.57:4723"),CapabilitiesReader.getDesiredCapabilities(device, "src\\test\\resources\\configuration.json"));

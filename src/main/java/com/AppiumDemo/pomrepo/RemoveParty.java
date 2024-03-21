@@ -23,7 +23,7 @@ public class RemoveParty {
 	public void synchronised(By locator, WebElement element)  {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		wait.until(ExpectedConditions.elementToBeClickable(element));	
+//		wait.until(ExpectedConditions.elementToBeClickable(element));	
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		}
 	
@@ -31,11 +31,11 @@ public class RemoveParty {
 		return driver;
 	}
 	
-	@FindBy(xpath="//android.widget.TextView[@text='John']")
+	@FindBy(xpath="//android.widget.TextView[@resource-id=\"com.nosh.list.NoshList:id/name_inside\" and @text=\"Smith\"]")
 	WebElement waitlistParty;
 	
 	public WebElement getWaitListParty() {
-		synchronised(By.xpath("//android.widget.TextView[@text='John']"),waitlistParty);
+		synchronised(By.xpath("//android.widget.TextView[@resource-id=\"com.nosh.list.NoshList:id/name_inside\" and @text=\"Smith\"]"),waitlistParty);
 		return waitlistParty;
 	}
 
@@ -63,19 +63,19 @@ public class RemoveParty {
 		return confirmRemove;
 	}
 	
-	@FindBy(id="com.nosh.list.NoshList:id/parent_layout")
+	@FindBy(xpath="//android.widget.TextView[@text='Show History']")
 	WebElement showHistoryButton;
 	
 	public WebElement getShowHistoryButton() {
-		synchronised(By.id("com.nosh.list.NoshList:id/parent_layout"),showHistoryButton);
+		synchronised(By.xpath("//android.widget.TextView[@text='Show History']"),showHistoryButton);
 		return showHistoryButton;
 	}
 	
-	@FindBy(xpath="//android.widget.TextView[@text='John']/following-sibling::android.widget.TextView[contains(@text,'removed')]")
+	@FindBy(xpath="//android.widget.TextView[@text='Smith']/following-sibling::android.widget.TextView[contains(@text,'removed')]")
 	WebElement checkRemovedStatus;
 	
 	public WebElement getCheckRemovedStatus() {
-		synchronised(By.xpath("//android.widget.TextView[@text='John']/following-sibling::android.widget.TextView[contains(@text,'removed')]"),checkRemovedStatus);
+		synchronised(By.xpath("//android.widget.TextView[@text='Smith']/following-sibling::android.widget.TextView[contains(@text,'removed')]"),checkRemovedStatus);
 		return checkRemovedStatus;
 	}
 }

@@ -5,11 +5,11 @@
 		<listener class-name="listeners.ExtentReportListener"></listener>
 		<listener class-name="listeners.ScreenshotListener"></listener>
 	</listeners>
-	
+	 <parameter name="device" value="samsung"></parameter>
   <test thread-count="5" name="Test1">
-	  <parameter name="device" value="samsung"></parameter>
+	 
 	<classes>
-      <class name="testCases.TestClass1"/>
+      <class name="testCases.TestClass2"/>
       
     </classes>
   </test> <!-- Test -->

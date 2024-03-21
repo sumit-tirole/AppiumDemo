@@ -51,7 +51,8 @@
     "automationName": "UiAutomator2",
     "appPackage": "com.nosh.list.NoshList",
     "appActivity": "com.nosh.list.NoshList.SplashActivity",
-    "recordVideo": true
+    "recordVideo": true,
+    "enforceXPath1": true	
      }
      }
 

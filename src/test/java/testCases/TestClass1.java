@@ -1,14 +1,17 @@
 package testCases;
 
 import java.io.IOException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.AppiumDemo.genericutility.BaseClass;
 import com.AppiumDemo.genericutility.FileUtility;
 import com.AppiumDemo.genericutility.Utility;
 import com.AppiumDemo.pomrepo.CreateParty;
+import com.AppiumDemo.pomrepo.Login;
 import com.AppiumDemo.pomrepo.RemoveParty;
 import com.AppiumDemo.pomrepo.ServeParty;
 
@@ -23,10 +26,11 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 0, enabled =true)
 	public void login() throws Throwable {
-		CreateParty element = new CreateParty(driver);
+		Login element = new Login(driver);
+		CreateParty element1 = new CreateParty(driver);
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));
-		element.getSignInButton().click();
+		element.getSignInButton1().click();
 		log.info("Login successful");	
 		element.getMenuButton().click();
 		element.getLogoutButton().click();
@@ -35,26 +39,27 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 1,enabled =false)
 	public void createParty() throws Throwable {
-		CreateParty element = new CreateParty(driver);		
+		Login element = new Login(driver);
+		CreateParty element1 = new CreateParty(driver);		
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));
-		element.getSignInButton().click();
-		element.getAddPartyButton().click();
-		element.getNameTextField().sendKeys("John");
-		element.getPhoneTextField().sendKeys("5169906822");
-		element.getEmailTextField().sendKeys("John123@yopmail.com");
-		element.getSizeTextField().sendKeys("5");
-		element.getChildSelectionButton().click();
-		element.getSeniorSelectionButton().click();
-		element.getSeniorSelectionButton().click();
-		element.getGreenButton().click();
-		element.getNotesTextField().sendKeys("Test Notes");
-		element.getNextButton().click();
+		element.getSignInButton1().click();
+		element1.getAddPartyButton().click();
+		element1.getNameTextField().sendKeys("John");
+		element1.getPhoneTextField().sendKeys("5169906822");
+		element1.getEmailTextField().sendKeys("John123@yopmail.com");
+		element1.getSizeTextField().sendKeys("5");
+		element1.getChildSelectionButton().click();
+		element1.getSeniorSelectionButton().click();
+		element1.getSeniorSelectionButton().click();
+		element1.getGreenButton().click();
+		element1.getNotesTextField().sendKeys("Test Notes");
+		element1.getNextButton().click();
 		util.performSwipe(driver, 553, 1659, 570, 586,1);         
-		element.getAssignButton().click();
-		element.getNextButton().click();
+		element1.getAssignButton().click();
+		element1.getNextButton().click();
 		util.performSwipe(driver, 528, 574, 528, 512,1);
-		element.getAddPartyButton1().click();
+		element1.getAddPartyButton1().click();
 		element.getMenuButton().click();
 		element.getLogoutButton().click();
 			
@@ -62,11 +67,11 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 2,enabled = true)
 	public void removeParty() throws IOException {
-		CreateParty element = new CreateParty(driver);
+		Login element = new Login(driver);
 		RemoveParty element1 = new RemoveParty(driver);
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));
-		element.getSignInButton().click();
+		element.getSignInButton1().click();
 		element1.getWaitListParty().click();
 		String name = element1.getWaitingPartyName().getAttribute("text");
 		if(name.equalsIgnoreCase("John")) {
@@ -83,12 +88,12 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 3, enabled=true)
 	public void serveParty() throws IOException {
-		CreateParty element = new CreateParty(driver);
+		Login element = new Login(driver);
 		RemoveParty element1 = new RemoveParty(driver);
 		ServeParty element2 = new ServeParty(driver);
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));
-		element.getSignInButton().click();
+		element.getSignInButton1().click();
 		element1.getShowHistoryButton().click();
 		element1.getWaitListParty().click();
 		element2.getReAddButton().click();
@@ -106,12 +111,12 @@ public class TestClass1 extends BaseClass {
 	
 	@Test(priority = 4, enabled=true)
 	public void reAddParty() throws IOException {
-		CreateParty element = new CreateParty(driver);
+		Login element = new Login(driver);
 		RemoveParty element1 = new RemoveParty(driver);
 		ServeParty element2 = new ServeParty(driver);
 		element.getLoginEmailTextField().sendKeys(fileUtils.getCredentials("email"));
 		element.getPasswordTextField().sendKeys(fileUtils.getCredentials("pass"));
-		element.getSignInButton().click();
+		element.getSignInButton1().click();
 		element1.getShowHistoryButton().click();
 		element1.getWaitListParty().click();
 		element2.getReAddButton().click();
@@ -119,7 +124,6 @@ public class TestClass1 extends BaseClass {
 		element.getMenuButton().click();
 		element.getLogoutButton().click();
 	}
-	
 	}
 	
 	
