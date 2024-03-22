@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.AppiumDemo.genericutility.BaseClass;
 import com.AppiumDemo.genericutility.FileUtility;
 import com.AppiumDemo.genericutility.Utility;
@@ -117,9 +116,7 @@ public class TestClass2 extends BaseClass {
 		Thread.sleep(500);
 		element.getAddPartyButton().click();
 		Thread.sleep(2000);
-		
-		//Assertions here
-						
+					
 		element.getCancelButton().click();
 		element2.getMenuButton().click();
 		element1.getCustomizationButton().click();
@@ -135,6 +132,14 @@ public class TestClass2 extends BaseClass {
 		Thread.sleep(500);
 		driver.navigate().back();
 		Thread.sleep(500);
+		
+		element.getAddPartyButton().click();
+		//Assertions
+		Assert.assertEquals(element.getEmailTextField().isDisplayed(), true);
+		Assert.assertEquals(element.getSizeTextField().isDisplayed(), true);
+		Assert.assertEquals(element.getNotesTextField().isDisplayed(), true);
+		//Assertions
+		element.getCancelButton().click();
 		element2.getMenuButton().click();
 		element2.getLogoutButton().click();
 		
@@ -184,6 +189,7 @@ public class TestClass2 extends BaseClass {
 		
 	}
 	
+		
 	
 	}
 	
