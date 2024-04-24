@@ -1,11 +1,11 @@
 package com.AppiumDemo.genericutility;
 
 import java.io.IOException;
-
 import java.net.URL;
 import java.time.Duration;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -21,15 +21,15 @@ public class BaseClass {
         	
     	    	
     	@Parameters({"device"})
-    	@BeforeSuite()
+    	@BeforeTest()
     	public void setup(String device) throws Exception {
     		   		
-    	driver = new AndroidDriver(new URL("http://192.168.3.57:4723"),CapabilitiesReader.getDesiredCapabilities(device, "src\\test\\resources\\configuration.json"));
+    	driver = new AndroidDriver(new URL("http://127.0.0.1:4723"),CapabilitiesReader.getDesiredCapabilities(device, "src\\test\\resources\\configuration.json"));
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
     	recordingUtil.startRecording(driver);
     	}
         	  
-    	@AfterSuite
+    	@AfterTest
     	public void postConditions() throws IOException {
     	
     	recordingUtil.stopRecording(driver);

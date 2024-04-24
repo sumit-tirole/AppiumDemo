@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-22T12:08:54 IST" name="Suite" finished-at="2024-03-22T12:10:54 IST" duration-ms="120052">
+  <suite started-at="2024-04-01T16:13:38 IST" name="Suite" finished-at="2024-04-01T16:14:24 IST" duration-ms="46620">
     <groups>
     </groups>
-    <test started-at="2024-03-22T12:08:54 IST" name="Test1" finished-at="2024-03-22T12:10:54 IST" duration-ms="120052">
-      <class name="testCases.TestClass2">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:08:46 IST" name="setup" finished-at="2024-03-22T12:08:54 IST" duration-ms="8770" status="PASS">
+    <test started-at="2024-04-01T16:13:38 IST" name="Test1" finished-at="2024-04-01T16:14:24 IST" duration-ms="46620">
+      <class name="testCases.TestClass1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TestClass1@71e9a896]" started-at="2024-04-01T16:13:38 IST" name="setup" finished-at="2024-04-01T16:13:46 IST" duration-ms="8768" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[samsung]]>
+                <![CDATA[Samsung Galaxy M31]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="signupScenario()[pri:0, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:08:54 IST" name="signupScenario" finished-at="2024-03-22T12:09:37 IST" duration-ms="42577" status="PASS">
+        <test-method signature="signupScenario()[pri:0, instance:testCases.TestClass1@71e9a896]" started-at="2024-04-01T16:13:46 IST" name="signupScenario" finished-at="2024-04-01T16:14:21 IST" duration-ms="34860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupScenario -->
-        <test-method signature="loginScenario()[pri:1, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:09:37 IST" name="loginScenario" finished-at="2024-03-22T12:09:42 IST" duration-ms="4936" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginScenario -->
-        <test-method signature="createPartyScenario()[pri:2, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:09:42 IST" name="createPartyScenario" finished-at="2024-03-22T12:10:18 IST" duration-ms="36267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPartyScenario -->
-        <test-method signature="Customization()[pri:3, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:10:18 IST" name="Customization" finished-at="2024-03-22T12:10:54 IST" duration-ms="36191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Customization -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass2@29ad44e3]" started-at="2024-03-22T12:10:55 IST" name="postConditions" finished-at="2024-03-22T12:10:59 IST" duration-ms="3967" status="PASS">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:testCases.TestClass1@71e9a896]" started-at="2024-04-01T16:14:21 IST" name="postConditions" finished-at="2024-04-01T16:14:24 IST" duration-ms="2937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
-      </class> <!-- testCases.TestClass2 -->
+      </class> <!-- testCases.TestClass1 -->
     </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

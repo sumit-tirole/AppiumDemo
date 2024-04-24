@@ -7,10 +7,10 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class ScrollToElement {
 	
-	public static void scroll(AndroidDriver driver,String MobileElementName) {
+	public static void scroll(AndroidDriver driver,String mobileElementName,String scrollViewId) {
 	
-	WebElement element = driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))"+
-																		".scrollIntoView(new UiSelector().text(\""+ MobileElementName +"\"))"));
+		WebElement element = driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).resourceIdMatches(\".*" + scrollViewId + "\")).scrollIntoView(new UiSelector().text(\"" + mobileElementName + "\"))"));
+	
 	}
 	
 	}

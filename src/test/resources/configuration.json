@@ -14,7 +14,7 @@
      },
    
    {
-  "name" : "samsung",
+  "name" : "Samsung Galaxy M31",
   "Caps": {
     "deviceName": "Samsung Galaxy M31",
     "udid": "RZ8R32J9CBX",
@@ -70,7 +70,19 @@
      }
      }
 
-
+{
+  "name" : "OPPO A15s",
+  "Caps": {
+    "deviceName": "OPPO A15s",
+    "udid": "JRCMDUYSMRFU5DEY",
+    "platformName": "Android",
+    "platformVersion": "10",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.nosh.list.NoshList",
+    "appActivity": "com.nosh.list.NoshList.SplashActivity"
+    
+     }
+     }
 
 
 

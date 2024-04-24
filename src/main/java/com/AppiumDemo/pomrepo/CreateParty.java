@@ -134,9 +134,15 @@ public class CreateParty {
 		return cancelButton;
 	}
 	
+	@FindBy(xpath="//android.view.View[@resource-id=\"com.nosh.list.NoshList:id/wait_time_wheel_view\"]")
+	WebElement waitTimeScroll;
+
+
+	public WebElement getWaitTimeScroll() {
+		return waitTimeScroll;
+	}
 	
-	
-	
+
 	
 	
 }

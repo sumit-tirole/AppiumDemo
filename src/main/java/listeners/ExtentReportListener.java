@@ -72,7 +72,8 @@ public class ExtentReportListener implements ITestListener {
 		int last = qualifiedName.lastIndexOf(".");
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
-
+		String deviceName = result.getTestContext().getCurrentXmlTest().getParameter("device"); //Getting device name from parameter
+		
 		System.out.println(methodName + " started!");
 		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
@@ -83,6 +84,7 @@ public class ExtentReportListener implements ITestListener {
 		 * splitByCharacterTypeCamelCase(methodName), StringUtils.SPACE));
 		 */
 		extentTest.assignCategory(className);
+		extentTest.getModel().setDescription("Device Name: " + deviceName); // Adding device name to extent report
 		test.set(extentTest);
 		test.get().getModel().setStartTime(getTime(result.getStartMillis()));
 	}
